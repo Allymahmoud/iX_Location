@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="IIf-mi-KJN">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Setting View Controller-->
+        <scene sceneID="o2e-Qj-D49">
+            <objects>
+                <viewController id="gf9-Yz-oOW" userLabel="Setting View Controller" customClass="SettingsViewController" customModule="iX_location" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KeZ-oe-7Bh"/>
+                        <viewControllerLayoutGuide type="bottom" id="X9Y-aB-0kz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3h9-vj-8Hk" customClass="SCNView" propertyAccessControl="none">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KsY-0j-tTh">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Settings" id="Bkg-Jn-TWK"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" image="ic_settings" id="LSa-Cq-2i9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="al1-hm-b9U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1362" y="1392"/>
+        </scene>
+        <!--Activity Log View Controller-->
+        <scene sceneID="1jM-a4-8gq">
+            <objects>
+                <viewController id="Qog-Qy-Fui" userLabel="Activity Log View Controller" customClass="ActivityLogViewController" customModule="iX_location" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lgN-52-18X"/>
+                        <viewControllerLayoutGuide type="bottom" id="efW-Zm-aTz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wkB-oC-zmW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sUw-wn-oWC">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Activity Log" id="Ut5-8O-A4x">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="n6F-MZ-n2p">
+                                            <connections>
+                                                <segue destination="vpn-47-c4b" kind="show" id="vNE-Yh-uD5"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Add" image="ic_list" id="gnr-2l-ndm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WpG-b0-7ff" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2018" y="916"/>
+        </scene>
+        <!--Add Activity View Controller-->
+        <scene sceneID="t2W-xu-epI">
+            <objects>
+                <viewController id="vpn-47-c4b" userLabel="Add Activity View Controller" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Rvx-Q2-1de"/>
+                        <viewControllerLayoutGuide type="bottom" id="dPf-Fr-c2s"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="29g-mQ-zGf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wHw-DU-Qp1">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Add Activity" id="ZqC-cM-OBP">
+                                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="UXZ-Kg-qM4"/>
+                                        <barButtonItem key="rightBarButtonItem" title="Save" id="wat-6G-ndu"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N16-I8-gh5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2765" y="924"/>
+        </scene>
+        <!--Map view controller-->
+        <scene sceneID="TZ4-nZ-X9t">
+            <objects>
+                <viewController title="main_" id="Dy2-GE-6G5" userLabel="Map view controller" customClass="MapViewController" customModule="iX_location" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dH3-L8-LPj"/>
+                        <viewControllerLayoutGuide type="bottom" id="LqY-jX-ciF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="A5w-lb-EXy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zDi-Cq-KmL">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Map" id="izD-Oz-zDb"/>
+                                </items>
+                            </navigationBar>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="AOj-l2-nMP">
+                                <rect key="frame" x="0.0" y="44" width="375" height="574"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Location" image="ic_location_on" id="hms-PR-aF8">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="MapView" destination="AOj-l2-nMP" id="NxN-nK-ddE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="am5-0U-8lK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2016.8" y="261.31934032983509"/>
+        </scene>
+        <!--main View Controller-->
+        <scene sceneID="Ri6-Bp-pyw">
+            <objects>
+                <tabBarController title="main View Controller" id="IIf-mi-KJN" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="hWU-cz-Uvs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Dy2-GE-6G5" kind="relationship" relationship="viewControllers" id="DPp-B4-Hq2"/>
+                        <segue destination="Qog-Qy-Fui" kind="relationship" relationship="viewControllers" id="tut-Jp-pDT"/>
+                        <segue destination="gf9-Yz-oOW" kind="relationship" relationship="viewControllers" id="kXh-6V-wWH"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jwn-7J-GGZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1066" y="589"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_list" width="24" height="24"/>
+        <image name="ic_location_on" width="24" height="24"/>
+        <image name="ic_settings" width="24" height="24"/>
+    </resources>
+</document>
